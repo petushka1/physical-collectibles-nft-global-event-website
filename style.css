@@ -1,0 +1,323 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+html {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  color: #272a31;
+  background-color: #d3d3d3;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.sideMargin {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coco {
+  font-family: 'COCOGOOSE';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.7rem;
+  line-height: 2.9rem;
+  padding: 0;
+  margin: 0;
+  background: url(img/event1.png) 0 0 / cover no-repeat;
+  background-clip: text;
+  opacity: 0.6;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h2Main {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.h3Thin {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.marginTop {
+  margin-top: 14px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.box {
+  border: solid #fff 1px;
+  box-sizing: border-box;
+  padding: 14px;
+  margin: 14px 0;
+}
+
+/* Program Section */
+.program {
+  text-align: center;
+  width: 100%;
+  background-color: #272a31;
+  color: #fff;
+  padding-top: 60px;
+  margin-top: 100px;
+}
+
+.programCard {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 40px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.programCard img {
+  width: auto;
+  height: 32px;
+}
+
+.programCard h3,
+.programCard p {
+  align-self: center;
+  padding-left: 14px;
+}
+
+.line {
+  margin: 20px 45%;
+  height: 1px;
+  background-color: #ec5242;
+}
+
+.lineGray {
+  background-color: rgba(39, 42, 49, 0.3);
+  height: 1px;
+  width: 8%;
+  margin: 10px 0;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.red {
+  color: #ec5242;
+}
+
+.radius {
+  border-radius: 4px;
+}
+
+/* Participants Section */
+#participants {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  margin: inherit;
+}
+
+.card img {
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.border {
+  border-radius: 50%;
+  border-top: solid #ec5242 10px;
+  transform: rotate(-45deg);
+  margin-right: 20px;
+}
+
+.description {
+  font-style: italic;
+  color: #ec5242;
+}
+
+#more {
+  flex: 1;
+  align-self: stretch;
+  margin: 40px 14px 0 14px;
+  padding: 20px;
+  background-color: unset;
+  border: solid rgba(39, 42, 49, 0.3) 2px;
+}
+
+/* Mobile Menu */
+.mobMenu {
+  margin: 20px 20px 60px 20px;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hmbrg {
+  width: auto;
+  height: 24px;
+}
+
+#logo {
+  display: none;
+}
+
+.menuList {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#join {
+  background-color: #ec5242;
+  padding: 30px 60px;;
+  color: #fff;
+  margin: 60px 0;
+}
+
+/* About PAge Style */
+.about {
+  text-align: center;
+}
+
+.box {
+  border: solid rgba(39, 42, 49, 0.3) 1px;
+  background-color: #fff;
+}
+
+.mailTo {
+  color: inherit;
+}
+
+.eventLogo {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-top: 49px;
+}
+
+.eventLog img {
+  min-width: 0;
+  height: auto;
+  margin: 20px;
+}
+
+.eventSection {
+  background: #fff;
+  width: 100%;
+  border-top: solid rgba(39, 42, 49, 0.3) 1px;
+  padding: 20px 0;
+}
+
+.eventItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 2 / 1;
+  background-image: url('img/event1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+}
+
+.marginBig {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.marginTopBottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.partner {
+  width: 100%;
+  background-color: rgba(39, 42, 49, 0.5);
+  color: #fff;
+  padding: 20px 0 40px 0;
+}
+
+.partnerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerWrapper img {
+  width: 120px;
+  height: auto;
+  padding: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  line-height: 1.1rem;
+  font-size: 1rem;
+}
+
+#footer img {
+  width: 100px;
+  height: auto;
+  margin-right: 20%;
+}
