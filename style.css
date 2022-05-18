@@ -26,6 +26,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('img/bgr.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  text-align: left;
 }
 
 .coco {
@@ -39,7 +44,7 @@ h1 {
   line-height: 2.9rem;
   padding: 0;
   margin: 0;
-  background: url(img/event1.png) 0 0 / cover no-repeat;
+  background: url(img/headerBgr.png) 0 0 / cover no-repeat;
   background-clip: text;
   opacity: 0.6;
   -webkit-background-clip: text;
@@ -93,6 +98,10 @@ p {
   margin: 14px 0;
 }
 
+.greeting {
+  margin-top: 40px;
+}
+
 /* Program Section */
 .program {
   text-align: center;
@@ -101,6 +110,10 @@ p {
   color: #fff;
   padding-top: 60px;
   margin-top: 100px;
+  background-image: url('img/bgr2.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .programCard {
@@ -111,6 +124,7 @@ p {
 
 .item {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 14px 28px;
@@ -127,6 +141,7 @@ p {
 .programCard p {
   align-self: center;
   padding-left: 14px;
+  padding-top: 0;
 }
 
 .line {
@@ -160,8 +175,19 @@ p {
   flex-direction: column;
   background-color: #fff;
   width: 100%;
+  padding: 60px 0 60px 0;
+  text-align: center;
+}
+
+.gridParticipants {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 0;
+  background-color: #fff;
   padding: 60px 0 40px 0;
   text-align: center;
+  padding: 0 20px;
+  margin-top: 20px;
 }
 
 .card {
@@ -218,9 +244,32 @@ p {
 
 .menuList {
   display: none;
-  padding: 0;
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding: 20% 0 0 20px;;
   margin: 0;
+  background-color: rgba(236, 82, 66, 0.6);
   list-style: none;
+  font-size: 2.7rem;
+  line-height: 3.4rem;
+  backdrop-filter: blur(5px);
+}
+
+#homeLink,
+#aboutLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+#close {
+  width: 16px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
 }
 
 #join {
@@ -251,9 +300,13 @@ p {
 }
 
 .eventLog img {
-  min-width: 0;
+  width: 100%;
   height: auto;
-  margin: 20px;
+  margin: 10%;
+}
+
+.logoBox {
+  padding: 20%;
 }
 
 .eventSection {
@@ -288,9 +341,9 @@ p {
 
 .partner {
   width: 100%;
-  background-color: rgba(39, 42, 49, 0.5);
+  background-color: rgba(39, 42, 49, 0.7);
   color: #fff;
-  padding: 20px 0 40px 0;
+  padding: 40px 0 40px 0;
 }
 
 .partnerWrapper {
@@ -302,9 +355,14 @@ p {
 }
 
 .partnerWrapper img {
-  width: 120px;
+  max-width: 100px;
   height: auto;
-  padding: 10px;
+  padding: 20px;
+}
+
+.footerWrapper {
+  width: 100%;
+  text-align: center;
 }
 
 #footer {
@@ -320,4 +378,60 @@ p {
   width: 100px;
   height: auto;
   margin-right: 20%;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+
+  .h3Thin  {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .greeting {
+    width: 55%;
+    align-self: flex-start;
+  }
+
+  .sideMargin {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .programCard {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .programCard h3,
+  .programCard p {
+    align-self: center;
+    padding-left: 0;
+    padding-top: 14px;
+  }
+
+  .gridParticipants {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 10%;
+    margin-top: 20px;
+    grid-column-gap: 20px;
+  }
+
+  #more {
+    display: none;
+  }
 }
