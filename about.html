@@ -11,25 +11,40 @@
   </head>
   <body>
     <header>
-      <nav class="desktopMob mobMenu">
-        <img id="logo" src="img/logo.svg" alt="logo">
+      <nav class="menuTop topMob">
+        <ul class="topMenuList topMenuListMob">
+          <li><a id="fb" href="#"><img class="sm" src="img/fb.svg" alt=""></a></li>
+          <li><a id="twitter" href="#"><img class="sm" src="img/twitter.svg" alt=""></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+      <nav class="sideMargin mobMenu menuDesktop">
+        <a href="index.html"><img id="logo" src="img/logo.svg" alt="logo"></a>
         <img id="hmbrg" src="img/hmbrg.svg" alt="">
-        <ul class="menuList">
-          <li>Home</li>
-          <li>About</li>
+        <ul class="menuListDesktop menuList">
+          <img id="close" src="img/close.svg" alt="">
+          <li><a class="menuLinkDesktop menuLink" id="homeLink">Home</a></li>
+          <li><a class="menuLinkDesktop menuLink" id="aboutLink">About</a></li>
+          <li><a class="menuLinkDesktop menuLink">Program</a></li>
+          <li><a class="menuLinkDesktop menuLink">Join</a></li>
+          <li><a class="menuLinkDesktop menuLink">Sponsor</a></li>
+          <li><a class="menuLinkDesktop menuLink">News</a></li>
+          <li><a class="menuLinkDesktop menuLink" id="book">Book a sit</a></li>
         </ul>
       </nav>
     </header>
 
     <div id="about" class="page about">
-      <section class="sideMargin">
+      <section class="greeting sideMarginAbout">
         <h2 class="red h3Thin">"Digitising real world !"</h2>
         <h1 class="coco marginTopBottom">
           NFT BLOCKCHAIN GLOBAL EVENT 2022
         </h1>
-        <p class="box marginTopBottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in nunc blandit urna pulvinar ornare non lobortis dolor. In aliquam fermentum tristique. Vivamus non nunc sit amet sem pharetra cursus.</p>
+        <p class="box marginTopBottom">It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
         <p>Want become a partner ?
-        <br> Pleace contact us:
+        <br> Please contact us:
         <br><a class="bold mailTo" href="mailto:partners@event.com?subject=feedback">partners@event.com</a>
         </p>
         <p class="marginTop">Want to be a speaker ?
@@ -41,46 +56,45 @@
       <section class="eventLogo">
         <h3 class="bold">NFT Blockchain Global Event 2022 Logo</h3>
         <p class="line"></p>
-        <p class="marginBig">Morbi non vulputate magna. Duis iaculis purus quis dolor varius ullamcorper. Pellentesque condimentum odio eros, nec euismod justo varius id. Duis ut posuere felis.</p>
-        <div class="box sideMargin logoBox">
+        <p class="marginBig sideMarginAbout">Morbi non vulputate magna. Duis iaculis purus quis dolor varius ullamcorper. Pellentesque condimentum odio eros, nec euismod justo varius id. Duis ut posuere felis.</p>
+        <div class="box sideMarginAbout marginTop logoBox">
           <img src="img/logo.svg" alt="">
         </div>
       </section>
 
-      <section class="eventSection">
+      <section class="eventSection sideMarginAbout">
         <h3 class="bold marginBig marginTopBottom">Learn more about the past events</h3>
         <p class="line"></p>
         <p class="marginBig">Take a look at the last two NFT Global Events took place in New York and Copenhagen</p>
-        <div class="eventItem marginBig marginTopBottom">
-          <h3>2021</h3>
-          <p>Vestibulum a ligula libero.</p>
-        </div>
-        <div class="eventItem marginBig marginTopBottom">
-          <h3>2021</h3>
-          <p>Vestibulum a ligula libero.</p>
+        <div class="eventGrid sideMarginAbout">
+          <div class="eventItem marginTopBottom">
+            <h3>2021</h3>
+            <p>Vestibulum a ligula libero.</p>
+          </div>
+          <div class="eventItem marginTopBottom">
+            <h3>2021</h3>
+            <p>Vestibulum a ligula libero.</p>
+          </div>
         </div>
       </section>
-
       <section class="partner" id="partners">
-        <h3 class="marginTopBottom bold">Partners</h3>
+        <h2 class="marginTopBottom bold">Partners</h2>
         <p class="line"></p>
         <div class="partnerWrapper sideMargin">
           <img src="img/cb.png" alt="">
           <img src="img/cc.png" alt="">
           <img src="img/forbes.png" alt="">
           <img src="img/cardano.png" alt="">
-          <img src="img\ripple.png" alt="">
+          <img src="img/ripple.png" alt="">
         </div>
       </section>
-
-      <footer id="footer" class="marginBig marginTopBottom">
-        <img src="img/logo.svg" alt="">
-        <div class="">
-          <p>NFR Global Event USA
-          Some Rights Reserved</p>
+      <footer class="wrapper">
+        <div  id="footer" class="">
+          <img src="img/logo.svg" alt="">
+            <p>NFT Global Event USA
+            <br>Some Rights Reserved</p>
         </div>
       </footer>
-    </div>
     <script src="index.js"></script>
   </body>
 </html>

@@ -8,13 +8,27 @@
   </head>
   <body>
     <header>
-      <nav class="desktopMob mobMenu">
-        <img id="logo" src="img/logo.svg" alt="logo">
+      <nav class="menuTop topMob">
+        <ul class="topMenuList topMenuListMob">
+          <li><a id="fb" href="#"><img class="sm" src="img/fb.svg" alt=""></a></li>
+          <li><a id="twitter" href="#"><img class="sm" src="img/twitter.svg" alt=""></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+      <nav class="sideMargin mobMenu menuDesktop">
+        <a href="index.html"><img id="logo" src="img/logo.svg" alt="logo"></a>
         <img id="hmbrg" src="img/hmbrg.svg" alt="">
-        <ul class="menuList">
+        <ul class="menuListDesktop menuList">
           <img id="close" src="img/close.svg" alt="">
-          <li><a id="homeLink">Home</a></li>
-          <li><a id="aboutLink">About</a></li>
+          <li><a class="menuLinkDesktop menuLink" id="homeLink">Home</a></li>
+          <li><a class="menuLinkDesktop menuLink" id="aboutLink">About</a></li>
+          <li><a class="menuLinkDesktop menuLink">Program</a></li>
+          <li><a class="menuLinkDesktop menuLink">Join</a></li>
+          <li><a class="menuLinkDesktop menuLink">Sponsor</a></li>
+          <li><a class="menuLinkDesktop menuLink">News</a></li>
+          <li><a class="menuLinkDesktop menuLink" id="book">Book a sit</a></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +74,7 @@
         <button id="join" class="fontMid radius" type="button" name="join">Join NFT Global Event</button>
       </section>
 
-      <section id="participants" class=" sideMargin">
+      <section id="participants">
         <h2 class="alignCenter bold">Projects</h2>
         <p class="line"></p>
         <div class="gridParticipants">
@@ -90,6 +104,25 @@
         </div>
         <button id="more" class="fontMid radius" type="button" name="more">See More</button>
       </section>
+
+      <section class="partner" id="partners">
+        <h2 class="marginTopBottom bold">Partners</h2>
+        <p class="line"></p>
+        <div class="partnerWrapper sideMargin">
+          <img src="img/cb.png" alt="">
+          <img src="img/cc.png" alt="">
+          <img src="img/forbes.png" alt="">
+          <img src="img/cardano.png" alt="">
+          <img src="img/ripple.png" alt="">
+        </div>
+      </section>
+      <footer class="wrapper">
+        <div id="footer" class="">
+          <img src="img/logo.svg" alt="">
+            <p>NFT Global Event USA
+            <br>Some Rights Reserved</p>
+        </div>
+      </footer>
     </div>
     <script src="index.js"></script>
   </body>

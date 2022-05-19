@@ -1,42 +1,44 @@
 // Mobile menuList
 const hmbrg = document.getElementById('hmbrg');
-const menuItems = document.querySelector('.menuList');
+const mobMenu = document.querySelector('.menuList');
+const menuDesktop = document.querySelector('.menuListDesktop');
 const close = document.getElementById('close');
+const logo = document.getElementById('logo');
+const topMenuDesktop = document.querySelector('.menuTop');
+const topMenuMob = document.querySelector('.topMob');
+
 const home = document.getElementById('homeLink');
 const about = document.getElementById('aboutLink');
-const footer = document.createElement('div');
+const footer = document.getElementById('footer');
+const partners = document.getElementById('partners');
+const aboutPage = document.getElementById('about');
 
-footer.className = 'footerWrapper'
-document.querySelector('body').appendChild(footer);
+const logoWhite = document.querySelector('#footer img');
 
-  footer.innerHTML = (`<section class="partner" id="partners">
-                        <h3 class="marginTopBottom bold">Partners</h3>
-                        <p class="line"></p>
-                        <div class="partnerWrapper sideMargin">
-                          <img src="img/cb.png" alt="">
-                          <img src="img/cc.png" alt="">
-                          <img src="img/forbes.png" alt="">
-                          <img src="img/cardano.png" alt="">
-                          <img src="img/ripple.png" alt="">
-                        </div>
-                      </section>
-                      <footer id="footer" class="marginBig marginTopBottom">
-                        <img src="img/logo.svg" alt="">
-                        <div class="">
-                          <p>NFR Global Event USA
-                          <br>Some Rights Reserved</p>
-                        </div>
-                      </footer>`);
-
+showFooter();
+colorFooter();
 window.addEventListener('resize', showFooter);
-
+window.addEventListener('resize', colorFooter);
 
 function showFooter() {
   if (window.innerWidth >= 768) {
-    footer.style.display = 'block';
+    footer.style.display = 'flex';
+    partners.style.display = 'block';
+    menuDesktop.style.display = 'flex';
+    topMenuDesktop.style.display = 'block';
+    if (document.body.contains(document.getElementById('about'))) {
+      partners.style.display = 'none';
+    }
   }
   else {
     footer.style.display = 'none';
+    partners.style.display = 'none';
+    menuDesktop.style.display = 'none';
+    topMenuDesktop.style.display = 'none';
+    if (document.body.contains(document.getElementById('about'))) {
+      partners.style.display = 'block';
+      footer.style.display = 'flex';
+    }
   }
 }
 
@@ -49,9 +51,24 @@ home.href = '#home';
 about.href = 'about.html';
 
 function openMenu() {
-    menuItems.style.display = 'block';
+  mobMenu.style.display = 'flex';
+  topMenuMob.style.display = 'block';
 }
 
 function closeMenu() {
-  menuItems.style.display = 'none';
+  mobMenu.style.display = 'none';
+  topMenuMob.style.display = 'none';
+}
+
+function colorFooter() {
+  if (window.innerWidth >= 768) {
+    footer.style.color = '#fff';
+    footer.parentNode.style.backgroundColor = '#272a31';
+    logoWhite.src = 'img/logoWhite.svg';
+  }
+  else {
+    footer.parentNode.style.backgroundColor = 'inherit';
+    footer.style.color = 'inherit';
+    logoWhite.src = 'img/logo.svg';
+  }
 }
