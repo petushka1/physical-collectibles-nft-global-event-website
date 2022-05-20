@@ -1,4 +1,4 @@
-// Mobile menuList
+// Mobile Menu and Layout
 const hmbrg = document.getElementById('hmbrg');
 const mobMenu = document.querySelector('.menuList');
 const menuDesktop = document.querySelector('.menuListDesktop');
@@ -19,6 +19,83 @@ showFooter();
 colorFooter();
 window.addEventListener('resize', showFooter);
 window.addEventListener('resize', colorFooter);
+
+close.addEventListener('click', closeMenu);
+hmbrg.addEventListener('click', openMenu);
+home.addEventListener('click', closeMenu);
+about.addEventListener('click', closeMenu);
+
+home.href = '#home';
+about.href = 'about.html';
+
+/* Dynamic Section */
+const cardsArr = [
+  {
+    image: 'img/photo1.png',
+    alt: 'XRP',
+    name: 'Brad Garlinghouse',
+    position: 'CEO of financial technology company Ripple Labs',
+    info: 'Mauris ut mauris fringilla, placerat dolor id, condimentum urna. Duis interdum arcu ut consectetur porttitor.'
+  },
+  {
+    image: 'img/photo2.png',
+    alt: 'Ethereum',
+    name: 'Vitalik" Buterin',
+    position: 'Co-founders of Ethereum. Canadian programmer and writer',
+    info: 'Mauris ut mauris fringilla, placerat dolor id, condimentum urna. Duis interdum arcu ut consectetur porttitor.'
+  },
+  {
+    image: 'img/photo3.png',
+    alt: 'Trust Wallet',
+    name: 'Viktor Radchenko',
+    position: 'founder and CEO of Trust Wallet',
+    info: 'Mauris ut mauris fringilla, placerat dolor id, condimentum urna. Duis interdum arcu ut consectetur porttitor.'
+  },
+  {
+    image: 'img/photo1.png',
+    alt: 'First Speaker',
+    name: 'Brad Garlinghouse ',
+    position: 'CEO of financial technology company Ripple Labs',
+    info: 'Mauris ut mauris fringilla, placerat dolor id, condimentum urna. Duis interdum arcu ut consectetur porttitor.'
+  },
+  {
+    image: 'img/photo1.png',
+    alt: 'First Speaker',
+    name: 'Brad Garlinghouse ',
+    position: 'CEO of financial technology company Ripple Labs',
+    info: 'Mauris ut mauris fringilla, placerat dolor id, condimentum urna. Duis interdum arcu ut consectetur porttitor.'
+  },
+  {
+    image: 'img/photo1.png',
+    alt: 'First Speaker',
+    name: 'Brad Garlinghouse ',
+    position: 'CEO of financial technology company Ripple Labs',
+    info: 'Mauris ut mauris fringilla, placerat dolor id, condimentum urna. Duis interdum arcu ut consectetur porttitor.'
+  },
+];
+
+const cardsSection = document.querySelector('.gridParticipants');
+var cardElement = '';
+
+
+function createCard(arr) {
+for (let i = 0; i < arr.length; i++) {
+cardElement +=
+`<div class="card">
+  <div class="border">
+    <img src=${arr[i].image} alt=${arr[i].altText}>
+  </div>
+  <div class="descriptionWrapper">
+    <h3 class="bold marginTop">${arr[i].name}</h3>
+    <p class="description marginTop">${arr[i].position}</p>
+    <p class="lineGray"></p>
+    <p class="update">${arr[i].info}</p>
+  </div>
+  </div>`;
+  }
+  cardsSection.innerHTML = cardElement;
+}
+createCard(cardsArr);
 
 function showFooter() {
   if (window.innerWidth >= 768) {
@@ -41,14 +118,6 @@ function showFooter() {
     }
   }
 }
-
-close.addEventListener('click', closeMenu);
-hmbrg.addEventListener('click', openMenu);
-home.addEventListener('click', closeMenu);
-about.addEventListener('click', closeMenu);
-
-home.href = '#home';
-about.href = 'about.html';
 
 function openMenu() {
   mobMenu.style.display = 'flex';
