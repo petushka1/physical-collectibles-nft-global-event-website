@@ -87,9 +87,15 @@ function colorFooter() {
 showFooter();
 colorFooter();
 
-if (page.id === 'about' && window.innerWidth >= 768) {
-  about.style.display = 'none';
-  home.style.display = 'block';
+if (page.id === 'about') {
+/*  about.style.display = 'none'; */
+  home.textContent = 'Home';
+  home.href = 'index.html';
+}
+else if (page.id === 'home') {
+/*  about.style.display = 'none'; */
+  home.textContent = 'About';
+  home.href = 'about.html';
 }
 
 window.addEventListener('resize', showFooter);

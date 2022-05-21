@@ -418,12 +418,6 @@ p {
   margin: 20px 20px 40px 20px;
 }
 
-.eventLog img {
-  width: 100%;
-  height: auto;
-  margin: 5% 10%;
-}
-
 .eventLogo {
   margin-top: 40px;
   padding-top: 20px;
@@ -444,7 +438,7 @@ p {
 }
 
 .eventItem {
-  aspect-ratio: 1.8 / 1;
+  aspect-ratio: 1.8;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -466,7 +460,7 @@ p {
   align-items: center;
   height: auto;
   align-self: stretch;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 1.8;
   background-color: rgba(236, 82, 66, 0.5);
 }
 
@@ -667,7 +661,7 @@ p {
   }
 
   #homeLink {
-    display: none;
+    display: block;
   }
 
   #book {
