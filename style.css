@@ -2,38 +2,38 @@
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
 @font-face {
-    font-family: 'COCOGOOSE';
-    font-style: normal;
-    font-weight: 400;
-    src: local('COCOGOOSE'), url('https://fonts.cdnfonts.com/s/26936/cocogoose_trial.woff') format('woff');
+  font-family: 'COCOGOOSE';
+  font-style: normal;
+  font-weight: 400;
+  src: local('COCOGOOSE'), url('https://fonts.cdnfonts.com/s/26936/cocogoose_trial.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff') format('woff');
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Light.woff') format('woff');
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Light.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff') format('woff');
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Black.woff') format('woff');
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Black.woff') format('woff');
 }
 
 html {
@@ -81,9 +81,8 @@ h1 {
   padding: 0;
   margin: 0;
   background: url(img/headerBgr.png) 0 0 / cover no-repeat;
-  background-clip: text;
   opacity: 0.6;
-  -webkit-background-clip: text !important;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -270,7 +269,7 @@ p {
   width: 50%;
 }
 
-.topMenuListMob  {
+.topMenuListMob {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -304,10 +303,10 @@ p {
   height: auto;
 }
 
-#fb img {
-  width: 25px;
+.eventLog img {
+  width: 100%;
   height: auto;
-  color: #fff;
+  margin: 5% 10%;
 }
 
 .mobMenu {
@@ -337,7 +336,7 @@ p {
   z-index: 1;
   left: 0;
   top: 0;
-  padding: 40px 0 0 20px;;
+  padding: 40px 0 0 20px;
   margin: 0;
   background-color: rgba(236, 82, 66, 0.6);
   list-style: none;
@@ -350,7 +349,7 @@ p {
   text-decoration: none;
   color: #fff;
   opacity: 1;
-  transition: opacity color 0.3s 0.3s;
+  transition: opacity 0.3s;
 }
 
 .menuLink:hover {
@@ -386,7 +385,7 @@ p {
 
 #join {
   background-color: #ec5242;
-  padding: 30px 60px;;
+  padding: 30px 60px;
   color: #fff;
   margin: 60px 0;
 }
@@ -419,17 +418,23 @@ p {
   margin: 20px 20px 40px 20px;
 }
 
-.eventLogo {
-  background-color: #fff;
-  width: 100%;
-  padding-top: 40px;
-  margin-top: 40px;
+#fb img {
+  width: 25px;
+  height: auto;
+  color: #fff;
 }
 
 .eventLog img {
   width: 100%;
   height: auto;
   margin: 5% 10%;
+}
+
+.eventLogo {
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: #fff;
+  width: 100%;
 }
 
 .eventGrid {
