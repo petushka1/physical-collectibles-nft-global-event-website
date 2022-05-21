@@ -22,6 +22,7 @@ body {
 }
 
 .page  {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,13 +92,6 @@ p {
   font-weight: 900;
 }
 
-.box {
-  border: solid #fff 1px;
-  box-sizing: border-box;
-  padding: 14px;
-  margin: 14px 0;
-}
-
 .greeting {
   margin-top: 40px;
 }
@@ -120,6 +114,7 @@ p {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-row-gap: 40px;
+  padding-top: 20px;
 }
 
 .item {
@@ -133,8 +128,9 @@ p {
 }
 
 .programCard img {
+  opacity: 0.7;
   width: auto;
-  height: 32px;
+  height: 50px;
 }
 
 .programCard h3,
@@ -215,13 +211,22 @@ p {
   color: #ec5242;
 }
 
-#more {
+.btn {
   flex: 1;
   align-self: stretch;
   margin: 40px 14px 0 14px;
   padding: 20px;
   background-color: unset;
   border: solid rgba(39, 42, 49, 0.3) 2px;
+}
+
+.btn:hover {
+  flex: 1;
+  align-self: stretch;
+  margin: 40px 14px 0 14px;
+  padding: 20px;
+  background-color: #fff;
+  border: solid rgba(39, 42, 49, 0.5) 2px;
 }
 
 /* Mobile Menu */
@@ -309,6 +314,18 @@ p {
 .menuLink {
   text-decoration: none;
   color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.menuLink:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.menuLink:active {
+  opacity: 1;
+  color: #ec5242;
 }
 
 #homeLink {
@@ -347,6 +364,15 @@ p {
 .box {
   border: solid rgba(39, 42, 49, 0.3) 1px;
   background-color: #fff;
+  padding: 14px;
+  margin: 14px 0;
+}
+
+.boxWhite {
+  border: solid #fff 1px;
+  background-color: rgba(211, 211, 211, 0.6);
+  padding: 14px;
+  margin: 14px 0;
 }
 
 .mailTo {
@@ -355,7 +381,7 @@ p {
 
 .logoBox {
   padding: 5% 15%;
-  margin-bottom: 40px;
+  margin: 20px 20px 40px 20px;
 }
 
 .eventLogo {
@@ -374,26 +400,41 @@ p {
 .eventGrid {
   display: grid;
   grid-template-columns: auto;
+  margin-bottom: 60px;
 }
 
 .eventSection {
   background: #fff;
   width: 100%;
   border-top: solid rgba(39, 42, 49, 0.3) 1px;
-  padding: 20px 0;
 }
 
 .eventItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 2 / 1;
-  background-image: url('img/event1.png');
+  aspect-ratio: 1.8 / 1;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   color: #fff;
+}
+
+#event1 {
+  background-image: url('img/event1.png');
+}
+
+#event2 {
+  background-image: url('img/event2.png');
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: auto;
+  align-self: stretch;
+  aspect-ratio: 1.8 / 1;
+  background-color: rgba( 236, 82, 66, 0.5);
 }
 
 .marginBig {
@@ -505,7 +546,7 @@ p {
     grid-column-gap: 20px;
   }
 
-  #more {
+  .btn {
     display: none;
   }
 
@@ -618,7 +659,8 @@ p {
   }
 
   .logoBox {
-    padding: 5% 15%;
+    margin: 20px 25% 40px 25%;
+    align-self: center;
     margin-bottom: 40px;
   }
 
@@ -628,7 +670,11 @@ p {
   }
 
   .sideMarginAbout {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .paragraph {
+    margin: 10px 35% 20px 35%;
   }
 }
