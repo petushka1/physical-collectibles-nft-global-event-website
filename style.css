@@ -1,10 +1,20 @@
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/Lato");
 
+@font-face {
+  font-family: 'cocogoose';
+    src: local('COCOGOOSE'), url("https://fonts.cdnfonts.com/css/cocogoose");
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff') format('woff');
+}
+
 html {
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Lato' !important;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   color: #272a31;
@@ -35,7 +45,7 @@ body {
 }
 
 .coco {
-  font-family: 'COCOGOOSE' !important;
+  font-family: 'COCOGOOSE';
   font-style: normal;
   font-weight: 400;
 }
