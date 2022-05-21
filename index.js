@@ -53,10 +53,8 @@ function showFooter() {
     partners.style.display = 'none';
     menuDesktop.style.display = 'none';
     topMenuDesktop.style.display = 'none';
-    if (document.body.contains(document.getElementById('about'))) {
-      partners.style.display = 'block';
-      footer.style.display = 'flex';
-    }
+    partners.style.display = 'block';
+    footer.style.display = 'flex';
   }
 }
 
