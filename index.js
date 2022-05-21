@@ -91,8 +91,7 @@ if (page.id === 'about') {
 /*  about.style.display = 'none'; */
   home.textContent = 'Home';
   home.href = 'index.html';
-}
-else if (page.id === 'home') {
+} else if (page.id === 'home') {
 /*  about.style.display = 'none'; */
   home.textContent = 'About';
   home.href = 'about.html';
