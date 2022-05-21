@@ -4,7 +4,7 @@
 html {
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Lato';
+  font-family: 'Lato' !important;
   font-style: normal;
   font-weight: 700;
   color: #272a31;
@@ -21,7 +21,7 @@ body {
   margin-right: 20px;
 }
 
-.page  {
+.page {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ body {
 }
 
 .coco {
-  font-family: 'COCOGOOSE';
+  font-family: 'COCOGOOSE' !important;
   font-style: normal;
   font-weight: 400;
 }
@@ -48,7 +48,7 @@ h1 {
   background: url(img/headerBgr.png) 0 0 / cover no-repeat;
   background-clip: text;
   opacity: 0.6;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
 
@@ -180,7 +180,6 @@ p {
   grid-template-columns: auto;
   grid-column-gap: 0;
   background-color: #fff;
-  padding: 60px 0 40px 0;
   text-align: center;
   padding: 0 20px;
   margin-top: 20px;
@@ -241,7 +240,8 @@ p {
   flex-direction: column;
   gap: 10px;
   position: fixed;
-  bottom: 0; left: 0;
+  bottom: 0;
+  left: 0;
   background-color: rgba(236, 82, 66, 0);
   list-style: none;
   font-size: 1rem;
@@ -315,7 +315,7 @@ p {
   text-decoration: none;
   color: #fff;
   opacity: 1;
-  transition: opacity 0.3s, color 0.3s;
+  transition: opacity color 0.3s 0.3s;
 }
 
 .menuLink:hover {

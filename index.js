@@ -20,21 +20,20 @@ const logoWhite = document.querySelector('#footer img');
 
 showFooter();
 colorFooter();
-window.addEventListener('resize', showFooter);
-window.addEventListener('resize', colorFooter);
-window.addEventListener('resize', showParticipants);
-
-close.addEventListener('click', closeMenu);
-hmbrg.addEventListener('click', openMenu);
-home.addEventListener('click', closeMenu);
-about.addEventListener('click', closeMenu);
-
-seeLess.style.display = 'none';
 
 if (page.id === 'about' && window.innerWidth >= 768) {
   about.style.display = 'none';
   home.style.display = 'block';
 }
+else if (page.id === 'home' && window.innerWidth >= 768) {
+  about.style.display = 'block';
+  home.style.display = 'none';
+}
+
+
+
+seeLess.style.display = 'none';
+
 
 /* Dynamic Participants Section */
 const cardsArr = [
@@ -192,3 +191,11 @@ function colorFooter() {
 
 seeMore.addEventListener('click', showMore);
 seeLess.addEventListener('click', showLess);
+window.addEventListener('resize', showFooter);
+window.addEventListener('resize', colorFooter);
+window.addEventListener('resize', showParticipants);
+
+close.addEventListener('click', closeMenu);
+hmbrg.addEventListener('click', openMenu);
+home.addEventListener('click', closeMenu);
+about.addEventListener('click', closeMenu);
