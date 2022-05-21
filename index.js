@@ -30,7 +30,14 @@ else if (page.id === 'home' && window.innerWidth >= 768) {
   home.style.display = 'none';
 }
 
+window.addEventListener('resize', showFooter);
+window.addEventListener('resize', colorFooter);
+window.addEventListener('resize', showParticipants);
 
+close.addEventListener('click', closeMenu);
+hmbrg.addEventListener('click', openMenu);
+home.addEventListener('click', closeMenu);
+about.addEventListener('click', closeMenu);
 
 seeLess.style.display = 'none';
 
@@ -191,11 +198,3 @@ function colorFooter() {
 
 seeMore.addEventListener('click', showMore);
 seeLess.addEventListener('click', showLess);
-window.addEventListener('resize', showFooter);
-window.addEventListener('resize', colorFooter);
-window.addEventListener('resize', showParticipants);
-
-close.addEventListener('click', closeMenu);
-hmbrg.addEventListener('click', openMenu);
-home.addEventListener('click', closeMenu);
-about.addEventListener('click', closeMenu);
