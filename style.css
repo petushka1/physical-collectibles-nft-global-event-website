@@ -1,0 +1,714 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+@font-face {
+  font-family: 'COCOGOOSE';
+  font-style: normal;
+  font-weight: 400;
+  src: local('COCOGOOSE'), url('https://fonts.cdnfonts.com/s/26936/cocogoose_trial.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Black.woff') format('woff');
+}
+
+html {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Lato', 'lato-normal', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #272a31;
+  background-color: #d3d3d3;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.sideMargin {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.page {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('img/bgr.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  text-align: left;
+}
+
+.coco {
+  font-family: 'COCOGOOSE', 'cocogoose', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.7rem;
+  line-height: 2.9rem;
+  padding: 0;
+  margin: 0;
+  background: url(img/headerBgr.png) 0 0 / cover no-repeat;
+  opacity: 0.6;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h2Main {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.h3Thin {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.marginTop {
+  margin-top: 14px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.greeting {
+  margin-top: 40px;
+}
+
+/* Program Section */
+.program {
+  text-align: center;
+  width: 100%;
+  background-color: #272a31;
+  color: #fff;
+  padding-top: 60px;
+  margin-top: 100px;
+  background-image: url('img/bgr2.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.programCard {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 40px;
+  padding-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.programCard img {
+  opacity: 0.7;
+  width: auto;
+  height: 50px;
+}
+
+.programCard h3,
+.programCard p {
+  align-self: center;
+  padding-left: 14px;
+  padding-top: 0;
+}
+
+.line {
+  margin: 20px 45%;
+  height: 1px;
+  background-color: #ec5242;
+}
+
+.lineGray {
+  background-color: rgba(39, 42, 49, 0.3);
+  height: 1px;
+  width: 8%;
+  margin: 10px 0;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.red {
+  color: #ec5242;
+}
+
+.radius {
+  border-radius: 4px;
+}
+
+/* Participants Section */
+#participants {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  padding: 60px 0 60px 0;
+  text-align: center;
+}
+
+.gridParticipants {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 0;
+  background-color: #fff;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  margin: inherit;
+}
+
+.card img {
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.border {
+  border-radius: 50%;
+  border-top: solid #ec5242 10px;
+  transform: rotate(-45deg);
+  margin-right: 20px;
+}
+
+.description {
+  font-style: italic;
+  color: #ec5242;
+}
+
+.btn {
+  flex: 1;
+  align-self: stretch;
+  margin: 40px 14px 0 14px;
+  padding: 20px;
+  background-color: unset;
+  border: solid rgba(39, 42, 49, 0.3) 2px;
+}
+
+.btn:hover {
+  flex: 1;
+  align-self: stretch;
+  margin: 40px 14px 0 14px;
+  padding: 20px;
+  background-color: #fff;
+  border: solid rgba(39, 42, 49, 0.5) 2px;
+}
+
+/* Mobile Menu */
+.topMob {
+  display: none;
+  background-color: rgba(39, 42, 49, 0);
+  width: 50%;
+}
+
+.topMenuListMob {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(236, 82, 66, 0);
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1rem;
+  backdrop-filter: blur(0);
+  color: #fff;
+  margin: 0 0 10px 20px;
+  padding: 0 0 15px 0;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.topMenuListMob a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.topMenuList li {
+  align-self: flex-start;
+  margin-right: 20px;
+}
+
+.sm {
+  width: 30px;
+  height: auto;
+}
+
+.eventLog img {
+  width: 100%;
+  height: auto;
+  margin: 5% 10%;
+}
+
+.mobMenu {
+  margin: 20px 20px 60px 20px;
+  height: auto;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hmbrg {
+  width: auto;
+  height: 24px;
+}
+
+#logo {
+  display: none;
+}
+
+.menuList {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding: 40px 0 0 20px;
+  margin: 0;
+  background-color: rgba(236, 82, 66, 0.6);
+  list-style: none;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  backdrop-filter: blur(5px);
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.menuLink:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.menuLink:active {
+  opacity: 1;
+  color: #ec5242;
+}
+
+#homeLink {
+  display: block;
+}
+
+#book {
+  padding: 10px 15px;
+  border: solid #ec5242 2px;
+  background-color: #fff;
+  color: #ec5242;
+  float: left;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+#close {
+  width: 16px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+#join {
+  background-color: #ec5242;
+  padding: 30px 60px;
+  color: #fff;
+  margin: 60px 0;
+}
+
+/* About PAge Style */
+.about {
+  text-align: center;
+}
+
+.box {
+  border: solid rgba(39, 42, 49, 0.3) 1px;
+  background-color: #fff;
+  padding: 14px;
+  margin: 14px 0;
+}
+
+.boxWhite {
+  border: solid #fff 1px;
+  background-color: rgba(211, 211, 211, 0.6);
+  padding: 14px;
+  margin: 14px 0;
+}
+
+.mailTo {
+  color: inherit;
+}
+
+.logoBox {
+  padding: 5% 15%;
+  margin: 20px 20px 40px 20px;
+}
+
+.eventLogo {
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: auto;
+  margin-bottom: 60px;
+}
+
+.eventSection {
+  background: #fff;
+  width: 100%;
+  border-top: solid rgba(39, 42, 49, 0.3) 1px;
+}
+
+.eventItem {
+  aspect-ratio: 2 / 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+#event1 {
+  background-image: url('img/event1.png');
+}
+
+#event2 {
+  background-image: url('img/event2.png');
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  align-self: stretch;
+  aspect-ratio: 2 / 1;
+  background-color: rgba(236, 82, 66, 0.5);
+}
+
+.marginBig {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.marginTopBottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.partner {
+  display: none;
+  width: 100%;
+  background-color: rgba(39, 42, 49, 0.7);
+  color: #fff;
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+
+.partnerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerWrapper img {
+  max-width: 100px;
+  height: auto;
+  padding: 20px;
+}
+
+#fb img {
+  width: 25px;
+  height: auto;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#footer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  line-height: 1.1rem;
+  font-size: 1rem;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+#footer img {
+  width: 100px;
+  height: auto;
+}
+
+.sideMarginAbout {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+
+  .h3Thin {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .greeting {
+    width: 55%;
+    align-self: flex-start;
+  }
+
+  .sideMargin {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .programCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .programCard h3,
+  .programCard p {
+    align-self: center;
+    padding-left: 0;
+    padding-top: 14px;
+  }
+
+  .gridParticipants {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 10%;
+    margin-top: 20px;
+    grid-column-gap: 20px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .menuDesktop {
+    margin: 20px 10% 60px 10%;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #hmbrg {
+    display: none;
+    width: auto;
+    height: 24px;
+  }
+
+  #logo {
+    display: block;
+    width: auto;
+    height: 50px;
+  }
+
+  .menuTop {
+    display: none;
+    width: 100%;
+    background-color: rgba(39, 42, 49, 1);
+  }
+
+  .topMenuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: unset;
+    z-index: 0;
+    top: unset;
+    right: unset;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    backdrop-filter: blur(0);
+    color: #fff;
+    margin: 0 10% 0 0;
+    padding: 20px 0 20px 0;
+  }
+
+  .topMenuList li {
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .topMenuList a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menuListDesktop {
+    flex-direction: row;
+    position: unset;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    left: unset;
+    top: unset;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(236, 82, 66, 0);
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    backdrop-filter: blur(0);
+  }
+
+  .menuLinkDesktop {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #homeLink {
+    display: block;
+  }
+
+  #book {
+    padding: 10px 15px;
+    border: solid #ec5242 2px;
+    color: #ec5242;
+    margin-top: 0;
+    float: none;
+  }
+
+  #close {
+    display: none;
+    width: 16px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+
+  /* About Section */
+  .eventSection {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .eventGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .logoBox {
+    margin: 20px 25% 40px 25%;
+    align-self: center;
+    margin-bottom: 40px;
+  }
+
+  .eventLogo img {
+    min-width: 0;
+    height: auto;
+  }
+
+  .sideMarginAbout {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .paragraph {
+    margin: 10px 35% 20px 35%;
+  }
+}
