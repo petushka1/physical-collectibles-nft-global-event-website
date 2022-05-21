@@ -282,7 +282,7 @@ p {
   line-height: 1rem;
   backdrop-filter: blur(0);
   color: #fff;
-  margin: 0 0 20px 20px;
+  margin: 0 0 10px 20px;
   padding: 0 0 15px 0;
   z-index: 2;
   opacity: 0.7;
@@ -372,7 +372,7 @@ p {
   background-color: #fff;
   color: #ec5242;
   float: left;
-  margin-top: 30px;
+  margin-top: 10px;
   white-space: nowrap;
 }
 

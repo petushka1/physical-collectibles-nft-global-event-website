@@ -91,7 +91,9 @@ function showAbout() {
   if (window.innerWidth >= 768) {
     about.style.display = 'none';
   } else {
-      about.style.display = 'block';
+    about.style.display = 'block';
+    home.textContent = 'Home';
+    home.href = 'index.html';
   }
 }
 
