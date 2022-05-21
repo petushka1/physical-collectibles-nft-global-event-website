@@ -418,12 +418,6 @@ p {
   margin: 20px 20px 40px 20px;
 }
 
-#fb img {
-  width: 25px;
-  height: auto;
-  color: #fff;
-}
-
 .eventLog img {
   width: 100%;
   height: auto;
@@ -470,11 +464,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
   height: auto;
   align-self: stretch;
-  aspect-ratio: 1.8 / 1;
-  background-color: rgba( 236, 82, 66, 0.5);
+  aspect-ratio: 2 / 1;
+  background-color: rgba(236, 82, 66, 0.5);
 }
 
 .marginBig {
@@ -499,7 +492,6 @@ p {
 .partnerWrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   align-items: center;
 }
@@ -508,6 +500,12 @@ p {
   max-width: 100px;
   height: auto;
   padding: 20px;
+}
+
+#fb img {
+  width: 25px;
+  height: auto;
+  color: #fff;
 }
 
 .wrapper {
@@ -541,7 +539,7 @@ p {
     line-height: 4.2rem;
   }
 
-  .h3Thin  {
+  .h3Thin {
     font-size: 2rem;
     line-height: 2.2rem;
   }
@@ -591,7 +589,7 @@ p {
   }
 
   .menuDesktop {
-    margin: 20px unset 60px unset;
+    margin: 20px 10% 60px 10%;
     width: auto;
     height: auto;
     display: flex;
@@ -624,7 +622,8 @@ p {
     align-items: center;
     position: unset;
     z-index: 0;
-    top: unset; right: unset;
+    top: unset;
+    right: unset;
     list-style: none;
     font-size: 1rem;
     line-height: 1rem;
@@ -650,8 +649,8 @@ p {
     width: auto;
     height: auto;
     z-index: 0;
-    left: none;
-    top: none;
+    left: unset;
+    top: unset;
     gap: 20px;
     padding: 0;
     margin: 0;
