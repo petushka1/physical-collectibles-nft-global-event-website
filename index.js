@@ -3,6 +3,8 @@ const close = document.getElementById('close');
 const logo = document.getElementById('logo');
 const about = document.getElementById('aboutLink');
 const home = document.getElementById('homeLink');
+const seeMore = document.getElementById('more');
+const seeLess = document.getElementById('less');
 
 const mobMenu = document.querySelector('.menuList');
 const menuDesktop = document.querySelector('.menuListDesktop');
@@ -29,22 +31,21 @@ else if (page.id === 'home' && window.innerWidth >= 768) {
 
 window.addEventListener('resize', showFooter);
 window.addEventListener('resize', colorFooter);
+window.addEventListener('resize', showParticipants);
 
 close.addEventListener('click', closeMenu);
 hmbrg.addEventListener('click', openMenu);
 home.addEventListener('click', closeMenu);
 about.addEventListener('click', closeMenu);
+seeMore.addEventListener('click', showMore);
+seeLess.addEventListener('click', showLess);
 
-/* Show/Hide participants */
-if (page.id === 'home' && window.innerWidth < 768) {
-  const seeMore = document.getElementById('more');
-  const seeLess = document.getElementById('less');
-  window.addEventListener('resize', showParticipants);
-  seeMore.addEventListener('click', showMore);
-  seeLess.addEventListener('click', showLess);
-  seeLess.style.display = 'none';
-  showParticipants();
+if (page.id === 'home' && window.innerWidth >= 768) {
+  about.style.display = 'none';
+  home.style.display = 'block';
 }
+seeLess.style.display = 'none';
+
 
 /* Dynamic Participants Section */
 const cardsArr = [
@@ -126,6 +127,11 @@ for (let i = 0; i < cardsArr.length; i++) {
     }
   }
 
+
+
+
+showParticipants();
+
 function showParticipants() {
   if (window.innerWidth >= 768) {
     cardsSection.innerHTML = cardElement.concat(cardElementHidden);
@@ -146,6 +152,7 @@ function showLess() {
   seeMore.style.display = 'block';
   seeLess.style.display = 'none';
 }
+
 
 function showFooter() {
   if (window.innerWidth >= 768) {
