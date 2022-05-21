@@ -612,7 +612,8 @@ p {
     z-index: 0;
     left: none;
     top: none;
-    padding: 0 0 0 0;;
+    gap: 20px;
+    padding: 0;
     margin: 0;
     background-color: rgba(236, 82, 66, 0);
     list-style: none;

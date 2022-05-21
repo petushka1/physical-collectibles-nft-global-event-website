@@ -90,9 +90,6 @@ colorFooter();
 if (page.id === 'about' && window.innerWidth >= 768) {
   about.style.display = 'none';
   home.style.display = 'block';
-} else if (page.id === 'home' && window.innerWidth >= 768) {
-  about.style.display = 'block';
-  home.style.display = 'none';
 }
 
 window.addEventListener('resize', showFooter);
@@ -106,10 +103,6 @@ about.addEventListener('click', closeMenu);
 seeMore.addEventListener('click', showMore);
 seeLess.addEventListener('click', showLess);
 
-if (page.id === 'home' && window.innerWidth >= 768) {
-  about.style.display = 'none';
-  home.style.display = 'block';
-}
 seeLess.style.display = 'none';
 
 /* Dynamic Participants Section */
