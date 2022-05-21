@@ -438,9 +438,9 @@ p {
 }
 
 .eventItem {
-  -webkit-aspect-ratio: 2 / 1;
+  aspect-ratio: 2 / 1;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   color: #fff;
 }
@@ -460,7 +460,7 @@ p {
   align-items: center;
   height: auto;
   align-self: stretch;
-  -webkit-aspect-ratio: 2 / 1;
+  aspect-ratio: 2 / 1;
   background-color: rgba(236, 82, 66, 0.5);
 }
 

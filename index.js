@@ -87,11 +87,21 @@ function colorFooter() {
 showFooter();
 colorFooter();
 
+function showAbout() {
+  if (window.innerWidth >= 768) {
+    about.style.display = 'none';
+  } else {
+      about.style.display = 'block';
+  }
+}
+
+showAbout();
+
 if (page.id === 'about') {
 /*  about.style.display = 'none'; */
   home.textContent = 'Home';
   home.href = 'index.html';
-} else if (page.id === 'home') {
+} else if (page.id === 'home' && (window.innerWidth >= 768)) {
 /*  about.style.display = 'none'; */
   home.textContent = 'About';
   home.href = 'about.html';
@@ -100,6 +110,7 @@ if (page.id === 'about') {
 window.addEventListener('resize', showFooter);
 window.addEventListener('resize', colorFooter);
 window.addEventListener('resize', showParticipants);
+window.addEventListener('resize', showAbout);
 
 close.addEventListener('click', closeMenu);
 hmbrg.addEventListener('click', openMenu);
