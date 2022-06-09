@@ -85,14 +85,6 @@ Debug HTML Javascript and CSS files if checks were unsuccessful
 
 
 
-## Inspiration
-
-👤 **Cindy Shin**
-
-- Creative Commons: [Cindy Shin](https://www.behance.net/adagio07)
-
-
-
 
 ## 🤝 Contributing
 
@@ -111,6 +103,15 @@ Give a ⭐️ if you like this project!
 > Talent is everywhere, but opportunity is not
 
 **Visit Microverse [site](https://www.microverse.org/) and start your journey!**
+
+### Inspiration
+
+👤 **Cindy Shin**
+
+- Creative Commons: [Cindy Shin](https://www.behance.net/adagio07)
+
+
+
 
 ## 📝 License
 

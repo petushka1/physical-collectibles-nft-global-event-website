@@ -3,7 +3,7 @@ const close = document.getElementById('close');
 const about = document.getElementById('aboutLink');
 const home = document.getElementById('homeLink');
 const seeMore = document.getElementById('more');
-const seeLess = document.getElementById('less');
+// const seeLess = document.querySelector('.less');
 
 const mobMenu = document.querySelector('.menuList');
 const menuDesktop = document.querySelector('.menuListDesktop');
@@ -28,15 +28,20 @@ function showParticipants() {
 }
 
 function showMore() {
-  cardsSection.innerHTML = cardElement.concat(cardElementHidden);
-  seeMore.style.display = 'none';
-  seeLess.style.display = 'block';
+  if (seeMore.innerHTML === 'See More') {
+    cardsSection.innerHTML = cardElement.concat(cardElementHidden);
+    seeMore.innerHTML = 'See Less';
+  } else if (seeMore.innerHTML === 'See Less') {
+    cardsSection.innerHTML = cardElement;
+    seeMore.innerHTML = 'See More';
+  }
 }
 
-function showLess() {
-  cardsSection.innerHTML = cardElement;
-  seeMore.style.display = 'block';
-  seeLess.style.display = 'none';
+function showButton() {
+  if (window.innerWidth >= 768) {
+  //  seeLess.style.display = 'none';
+    seeMore.style.dispaly = 'none';
+  }
 }
 
 function showFooter() {
@@ -45,6 +50,7 @@ function showFooter() {
     partners.style.display = 'block';
     menuDesktop.style.display = 'flex';
     topMenuDesktop.style.display = 'block';
+    document.querySelector('html').style.overflow = 'scroll';
     if (document.body.contains(document.getElementById('about'))) {
       partners.style.display = 'none';
     }
@@ -61,12 +67,14 @@ function showFooter() {
 function openMenu() {
   mobMenu.style.display = 'flex';
   topMenuMob.style.display = 'block';
+  document.querySelector('html').style.overflow = 'hidden';
 }
 
 function closeMenu() {
   if (window.innerWidth < 768) {
     mobMenu.style.display = 'none';
     topMenuMob.style.display = 'none';
+    document.querySelector('html').style.overflow = 'scroll';
   }
 }
 
@@ -111,15 +119,16 @@ window.addEventListener('resize', showFooter);
 window.addEventListener('resize', colorFooter);
 window.addEventListener('resize', showParticipants);
 window.addEventListener('resize', showAbout);
+window.addEventListener('resize', showButton);
 
 close.addEventListener('click', closeMenu);
 hmbrg.addEventListener('click', openMenu);
 home.addEventListener('click', closeMenu);
 about.addEventListener('click', closeMenu);
 seeMore.addEventListener('click', showMore);
-seeLess.addEventListener('click', showLess);
+// seeMore.addEventListener('click', showLess);
 
-seeLess.style.display = 'none';
+// seeLess.style.display = 'none';
 
 /* Dynamic Participants Section */
 const cardsArr = [
@@ -170,7 +179,7 @@ const cardsArr = [
 for (let i = 0; i < cardsArr.length; i += 1) {
   if (i <= 1) {
     cardElement
-    += `<div class="card ${i > 1 ? 'unseen' : ''}">
+    += `<div class="card ${i > 2 ? 'unseen' : ''}">
       <div class="border">
         <img src=${cardsArr[i].image} alt=${cardsArr[i].altText}>
       </div>
