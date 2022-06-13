@@ -98,20 +98,15 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+Inspired by
+👤 **Cindy Shin**
+- Creative Commons: [Cindy Shin](https://www.behance.net/adagio07)
+
 - The project is built accordingly to [Micloverse](https://github.com/microverseinc) learning program requirements.
 - Motivated and inspired by Micloverse.
 > Talent is everywhere, but opportunity is not
 
 **Visit Microverse [site](https://www.microverse.org/) and start your journey!**
-
-### Inspiration
-
-👤 **Cindy Shin**
-
-- Creative Commons: [Cindy Shin](https://www.behance.net/adagio07)
-
-
-
 
 ## 📝 License
 
